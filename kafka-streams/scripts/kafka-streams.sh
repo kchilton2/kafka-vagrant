@@ -8,7 +8,7 @@ sudo tar xzvf /opt/kafka_2.11-0.10.0.1.tgz -C /opt/
 sudo ln -s /opt/kafka_2.11-0.10.0.1 /opt/kafka
 
 # Start a single node instance of Zookeeper using the provided convenience script.
-sudo /opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+sudo /opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties &
 
 # Start the Kafka server.
-sudo /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+sudo /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties &
